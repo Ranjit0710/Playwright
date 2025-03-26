@@ -1,6 +1,7 @@
 name: Run Cart Tests
 
 on:
+  workflow_dispatch:  # ✅ enables manual trigger from GitHub UI
   push:
     paths:
       - 'tests/cart/**'
