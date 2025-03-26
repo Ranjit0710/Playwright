@@ -1,0 +1,45 @@
+{
+  "name": "e-commerce-playwright-framework",
+  "version": "1.0.0",
+  "description": "Comprehensive Playwright automation framework for e-commerce website testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:webkit": "playwright test --project=webkit",
+    "test:firefox": "playwright test --project=firefox",
+    "test:chrome": "playwright test --project=chromium",
+    "test:all-browsers": "playwright test --project=all",
+    "test:parallel": "playwright test --workers=4",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:visual": "playwright test --grep @visual",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com/",
+    "update:snapshots": "playwright test --update-snapshots"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e-commerce"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.0",
+    "@playwright/test": "^1.40.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "allure-playwright": "^2.4.0",
+    "csv-parse": "^5.5.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-playwright": "^0.15.3",
+    "pixelmatch": "^5.3.0",
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}

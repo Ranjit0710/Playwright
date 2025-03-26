@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Playwright test results
+playwright-report/
+test-results/
+
+# Playwright traces
+*.trace.zip
+
+# Environment files
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# VS Code settings
+.vscode/
+
+# Compiled files
+*.tsbuildinfo
+
+# Dependencies installed by Playwright
+.playwright/

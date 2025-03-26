@@ -1,0 +1,38 @@
+[
+  {
+    "type": "standard",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Standard user with no restrictions"
+  },
+  {
+    "type": "locked_out",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "description": "User that has been locked out"
+  },
+  {
+    "type": "problem",
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "description": "User with various issues in the app"
+  },
+  {
+    "type": "performance_glitch",
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "description": "User that experiences slow load times"
+  },
+  {
+    "type": "error",
+    "username": "error_user",
+    "password": "secret_sauce",
+    "description": "User that generates errors in the app"
+  },
+  {
+    "type": "visual",
+    "username": "visual_user",
+    "password": "secret_sauce",
+    "description": "User that experiences visual glitches"
+  }
+]
