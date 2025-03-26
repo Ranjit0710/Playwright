@@ -11,7 +11,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 export default defineConfig({
   use: {
-    headless: false, // This makes all tests run in headed mode by default
+    headless: true, // This makes all tests run in headed mode by default
     // Optional: slow down execution to see actions more clearly
     launchOptions: {
       slowMo: 500, // Slows down Playwright operations by 500ms
