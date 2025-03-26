@@ -1,6 +1,7 @@
 name: Run Authentication Tests
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'tests/authentication/**'
