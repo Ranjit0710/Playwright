@@ -1,0 +1,31 @@
+name: Run Authentication Tests
+
+on:
+  push:
+    paths:
+      - 'tests/authentication/**'
+  pull_request:
+    paths:
+      - 'tests/authentication/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Authentication Tests
+        run: npx playwright test tests/authentication/
