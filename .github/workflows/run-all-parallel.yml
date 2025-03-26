@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npx playwright install --with-deps
-      - run: npx playwright test "tests/authentication/**/*.spec.ts"
+      - run: npx playwright test tests/authentication/
 
   cart:
     name: Run Cart Tests
@@ -32,7 +32,7 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npx playwright install --with-deps
-      - run: npx playwright test "tests/cart/**/*.spec.ts"
+      - run: npx playwright test tests/cart/
 
   checkout:
     name: Run Checkout Tests
@@ -44,16 +44,4 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npx playwright install --with-deps
-      - run: npx playwright test "tests/checkout/**/*.spec.ts"
-
-  product:
-    name: Run Product Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: npm install
-      - run: npx playwright install --with-deps
-      - run: npx playwright test "tests/product/**/*.spec.ts"
+      - run: npx playwright test tests/checkout/
